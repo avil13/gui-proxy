@@ -1,0 +1,9 @@
+
+Wine is required to use the app-copyright, app-version, build-version, icon, and
+win32metadata parameters for Windows targets.
+
+Make sure that the "wine" executable is in your PATH.
+
+See https://github.com/electron-userland/electron-packager#building-windows-apps-from-non-windows-platforms for details.
+
+https://github.com/electron-userland/electron-packager/blob/master/usage.txt

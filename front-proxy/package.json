@@ -1,0 +1,35 @@
+{
+  "name": "gui-proxy",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "avil13 <13.avil@gmail.com>",
+  "private": true,
+  "main": "elect.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "start": "electron .",
+    "build:app": "electron-packager . gui-proxy --ignore=node_modules/* --out=app/ --overwrite --icon=src/assets/logo.png",
+    "build:x": "npm run build:front && npm run build:app"
+  },
+  "dependencies": {
+    "socket.io-client": "^1.7.3",
+    "vue": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-latest": "^6.0.0",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "electron": "^1.6.2",
+    "electron-packager": "^8.6.0",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  }
+}

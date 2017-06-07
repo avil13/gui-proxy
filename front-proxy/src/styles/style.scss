@@ -1,0 +1,28 @@
+@import './photon/dist/css/photon.scss';
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+.red{
+    color: red;
+}
+
+.port{
+    color: #999;
+}
+
+.form{
+    min-width: 400px;
+    max-width: 500px;
+}
+
+.fl-r{
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after { content: " "; display: table;}
+.clearfix:after { clear: both; }
